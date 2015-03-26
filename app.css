@@ -1,0 +1,12 @@
+body {
+  font-family: "helvetica neue";
+}
+
+textarea {
+  width: 80%;
+  height: 10em;
+}
+
+#results {
+  border: 1px green dotted;
+}
