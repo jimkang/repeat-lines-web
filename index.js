@@ -2,7 +2,7 @@ d3.select('#go').on('click', repeatText)
 
 function repeatText() {
   var inputText = d3.select('#input-text').node().value;
-  var times = d3.select('#times').attr('value');
+  var times = d3.select('#times').node().value;
   // console.log(times);
   var lines = inputText.split('\n');
   var outputText = '';
