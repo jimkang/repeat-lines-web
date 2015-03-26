@@ -3,6 +3,8 @@ d3.select('#go').on('click', repeatText)
 function repeatText() {
   var inputText = d3.select('#input-text').node().value;
   var times = d3.select('#times').node().value;
+  var prefix = d3.select('#prefix').node().value;
+  var suffix = d3.select('#suffix').node().value;
   // console.log(times);
   var lines = inputText.split('\n');
   var outputText = '';
@@ -10,7 +12,7 @@ function repeatText() {
 
   function appendMultiples(line) {
     for (var i = 0; i < times; ++i) {
-      outputText += (line + '\n');
+      outputText += (prefix + line + suffix + '\n');
     }
   }
 
